@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Agbalumo&display=swap');
+
+
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #101010AA; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    padding: 1px;
+    margin: 0px;
+    
+}
+
+.sidenav details{
+    margin: 1px;
+    background-color: #10101000;
+    position: relative;
+    left: 0;
+    bottom: -10px;
+    color: white;
+    text-align: left;
+    font-family: "ADLaM Display";
+    letter-spacing: 0.2vw;
+    font-size: 2vh;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: white;
+}
+
+
+.sidenav details a{
+    margin: 15px;
+    color: white;
+    text-decoration: underline;
+}
+
+.sidenav details a:hover{
+  color: #BBBBBB;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    color: white;
+    position: absolute;
+    top: 0px;
+    right: 15px;
+    font-size: 40px;
+    margin-left: 50px;
+}
+  
+.sidenav .closebtn:hover {
+    color: #AAAAAA;
+}
+  
+/* The button used to open the sidebar */
+.openBtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #101010AA;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+  
+.openBtn:hover {
+    background-color: #101010BB;
+}
+  
+.sidenav details{
+    padding: 10px;
+}
+
+.material{
+    position: relative;
+    top: 5%;
+    display: grid;
+    place-items: center flex-start;
+} 
+
+iframe{
+    position: relative;
+    top: 40px;
+    left: -15px;
+}   
+
+@media screen and (max-width: 600px) {
+    .sidenav {
+        padding-top: 15px;
+        height: 100vh;
+    }
+    .sidenav a {font-size: 15px;}
+} 

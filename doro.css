@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+CU&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+html,
+body {
+  background-image: url(./bg3.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  color: #fff;
+  overflow-x: hidden;
+}
+
+header h1 {
+  font-family: "Playwrite CU";
+  font-size: 7vw;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
+  font-size-adjust: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+main {
+  color: black;
+  text-align: center;
+  font-family: "ADLaM Display";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 5px;
+  display: inline-block;
+}
+
+main .settings {
+  padding: 15px;
+  padding-left: 20px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 25px;
+}
+
+.counter {
+  height: 20vw;
+  min-width: 70vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #101010aa;
+  padding: 3px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin: 3px;
+  font-size: 8vw;
+  border-radius: 10px;
+}
+
+.next-event-info {
+  font-size: 30px;
+  min-width: 70vw;
+  padding: 5px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 10px;
+  letter-spacing: 3px;
+}
+
+.study-session-counter {
+  width: fit-content;
+  display: inline-block;
+  font-size: 30px;
+  padding: 6px;
+  margin: 2px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 10px;
+}
+
+.anime-session-counter {
+  width: fit-content;
+  display: inline-block;
+  font-size: 30px;
+  padding: 6px;
+  margin: 2px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 10px;
+}
+
+.total-count-study {
+  width: fit-content;
+  display: inline-block;
+  font-size: 20px;
+  padding: 6px;
+  margin: 2px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 10px;
+}
+
+.total-count-anime {
+  width: fit-content;
+  display: inline-block;
+  font-size: 20px;
+  padding: 6px;
+  margin: 2px;
+  color: white;
+  background-color: #101010aa;
+  border-radius: 10px;
+}
+
+.aft-start {
+  display: none;
+  font-size: 13vw;
+}
+
+.before-start {
+  font-size: 6vw;
+  background: none;
+  line-height: 1px;
+  border-radius: 10px;
+  color: white;
+  font-family: "ADLaM Display";
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+h4 {
+  position: relative;
+  top: 5%;
+  margin-bottom: 2vw;
+}
+
+.counter input {
+  width: 10vw;
+  height: 7vw;
+  background: none;
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-size: 5.5vw;
+  font-weight: 900;
+  font-family: "Oswald";
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .counter {
+    font-size: 6vw;
+  }
+  .next-event-info {
+    font-size: 20px;
+  }
+  .study-session-counter,
+  .anime-session-counter {
+    font-size: 20px;
+  }
+  .total-count-study,
+  .total-count-anime,
+  h6 {
+    font-size: 15px;
+  }
+  .aft-start {
+    font-size: 9vw;
+  }
+  .before-start {
+    font-size: 5vw;
+  }
+}

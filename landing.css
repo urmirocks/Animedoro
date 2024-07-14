@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Agbalumo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Klee+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,600;1,600&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html,
+body {
+  color: white;
+  background-color: black;
+  background-image: url("bg2.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -ms-interpolation-mode: bicubic;
+  background-attachment: fixed;
+}
+
+header,
+main {
+  padding: 5px;
+  text-align: center;
+  font-weight: lighter;
+  color: white;
+  text-size-adjust: auto;
+  letter-spacing: 5px;
+}
+
+header h1 {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: "zen maru gothic";
+  font-weight: 500;
+  font-size: 10vw;
+  font-size-adjust: auto;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+header p {
+  font-family: "klee one";
+  font-size: 30px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  max-width: fit-content;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  font-weight: 100;
+  padding: 5px;
+  text-size-adjust: auto;
+  text-align: center;
+  font-family: "ADLaM Display";
+  font-size: 25px;
+  border-radius: 25px;
+}
+
+main h1 {
+  letter-spacing: 5px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.content {
+  width: 80vw;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  margin: 5px;
+  background-color: #101010aa;
+  border-radius: 20px;
+}
+
+main h2 {
+  width: 75%;
+  min-height: 100vh;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.3em;
+  letter-spacing: 4px;
+  line-height: 1.4;
+  padding: 15px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+main a {
+  text-decoration: underline;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  main h2, h3 {
+    font-size: 1em;
+    letter-spacing: 2px;
+    line-height: 1.2;
+  }
+
+   h1{
+    font-size: 7vw;
+  }
+
+  header p{
+    font-size: 20px;
+  }
+}

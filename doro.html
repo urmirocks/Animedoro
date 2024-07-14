@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animedoro-timer</title>
+    <link rel="stylesheet" href="doro.css" />
+    <link rel="stylesheet" href="./button.css" />
+    <link rel="stylesheet" href="./sidebar.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+
+  <body>
+    <header>
+      <h1>Animedoro</h1>
+    </header>
+    <nav class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &lt;
+      </a>
+
+      <a href="./index.html">
+        <button
+          class="button-black"
+          type="button"
+          onclick=""
+          style="position: relative; top: 6%"
+        >
+          HOME
+        </button>
+      </a>
+      <a href="./doro.html">
+        <button
+          class="button-black"
+          type="button"
+          onclick=""
+          style="position: relative; top: 6%; left: 1%"
+        >
+          TIMER
+        </button>
+      </a>
+      <br />
+      <br />
+      <div class="material">
+        <details open>
+          <summary style="cursor: pointer">Vibing Material</summary>
+          <details>
+            <summary style="cursor: pointer; position: absolute; left: 8%">
+              Anime Music
+            </summary>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/2hmggPfWXyCOmUtmWzKItS"
+              width="230"
+              height="300"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </details>
+          <br />
+          <details>
+            <summary style="cursor: pointer; position: absolute; left: 8%">
+              Anime LOFI
+            </summary>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/0aQltjGqAFjNTVNGjoELKq"
+              width="230"
+              height="300"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </details>
+          <br />
+          <details>
+            <summary style="cursor: pointer; position: absolute; left: 8%">
+              Hatsune Miku
+            </summary>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/7ISGo58d10WRhVgfN55d1w"
+              width="230"
+              height="300"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </details>
+          <br />
+          <details>
+            <summary style="cursor: pointer; position: absolute; left: 8%">
+              Retro Tunes
+            </summary>
+            <iframe
+              src="https://open.spotify.com/embed/playlist/3lc6yNcs0dN6Z8czsrpSZj"
+              width="230"
+              height="300"
+              frameborder="0"
+              allowtransparency="true"
+              allow="encrypted-media"
+            ></iframe>
+          </details>
+        </details>
+        <br />
+
+        <details>
+          <summary style="cursor: pointer">How it works?</summary>
+          <p>
+            You can set work and anime time<br />
+            A timer starts and it notifies you when the time is over <br />
+            You can add extra 5 minutes whenever you want <br />
+            After the work time, you are free to watch anime<br />
+            It notifies you again after set time to stop watching <br />
+            You can start time timer again if you wish to continue studying or
+            working
+          </p>
+        </details>
+        <br />
+      </div>
+      <div class="buttons">
+        <a
+          href="https://github.com/urmirocks/Animedoro"
+          style="position: absolute; left: 10px; bottom: 10%"
+          target="_blank"
+        >
+          <button class="button-black" type="button" onclick="">
+            <p style="font-size: 15px">GITHUB REPO</p>
+          </button>
+        </a>
+        <a
+          href="https://www.instagram.com/oh.its.just.waves_/"
+          style="position: absolute; left: 10px; top: 90%"
+        >
+          <button class="button-black" type="button" onclick="">
+            <p style="font-size: 15px">INSTAGRAM ID</p>
+          </button>
+        </a>
+      </div>
+    </nav>
+    <button
+      class="openBtn"
+      style="position: fixed; top: 0; left: 0; font-size: 23px"
+      onclick="openNav()"
+    >
+      &gt;
+    </button>
+    <main class="main">
+      <div class="counter">
+        <span class="before-start">
+          <h4>
+            WORK MINUTES:
+            <input
+              type="number"
+              id="work-input"
+              onchange="inpchk(workInp)"
+              oninput="inpvalid(workInp)"
+              value="40"
+            />
+          </h4>
+          <br />
+          <h4>
+            ANIME MINUTES:
+            <input
+              type="number"
+              id="anime-input"
+              onchange="inpchk(aniInp)"
+              oninput="inpvalid(aniInp)"
+              value="20"
+            />
+          </h4>
+        </span>
+        <span class="aft-start">
+          <span class="minutes">40</span>
+          :
+          <span class="seconds">00</span>
+        </span>
+      </div>
+      <br />
+      <h3 class="next-event-info">...</h3>
+      <br />
+      <h3 class="study-session-counter">0 Study sessions</h3>
+      <h3 class="anime-session-counter">0 Anime sessions</h3>
+      <br />
+      <br />
+      <h4 class="total-count-study">0 Hours of Study</h4>
+      <h4 class="total-count-anime">0 Hours of Anime</h4>
+      <br />
+      <button
+        class="button-black"
+        id="reset-button"
+        type="button"
+        onclick="reset()"
+      >
+        <h6>RESET</h6>
+      </button>
+      <button
+        class="button-black"
+        id="start-button"
+        type="button"
+        onclick="startClicked()"
+      >
+        <h6>START</h6>
+      </button>
+      <button
+        class="button-black"
+        id="finish-button"
+        type="button"
+        onclick="finishCountdown()"
+      >
+        <h6>FINISH</h6>
+      </button>
+      <button
+        class="button-black"
+        id="plus5"
+        type="button"
+        onclick="add5mins()"
+      >
+        <h6>+5</h6>
+      </button>
+      <button
+        class="button-black"
+        id="pause"
+        type="button"
+        onclick="pauseCountdown()"
+      >
+        <i class="fa-solid fa-pause material-icons"></i>
+      </button>
+      <button
+        class="button-black"
+        id="play"
+        type="button"
+        onclick="resumeCountdown()"
+      >
+        <i class="fa-solid fa-play material-icons"></i>
+      </button>
+      <audio src="tone.mp3" id="notificationSound"></audio>
+    </main>
+
+    <script src="./app.js"></script>
+    <script src="doro.js"></script>
+  </body>
+</html>

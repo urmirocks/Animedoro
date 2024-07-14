@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Animedoro</title>
+    <link rel="stylesheet" href="landing.css" />
+    <link rel="stylesheet" href="button.css" />
+    <link rel="stylesheet" href="sidebar.css" />
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+
+      gtag("config", "G-J7FLR9LSTH");
+    </script>
+  </head>
+
+  <body>
+    <header>
+      <h1>AnimeDoro</h1>
+      <p>Anime meets pomodoro</p>
+    </header>
+    <nav class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+        &#8801;
+      </a>
+      <a href="index.html">
+        <button
+          class="button-black"
+          type="button"
+          onclick=""
+          style="position: absolute; left: 10px; top: 6%"
+        >
+          HOME
+        </button>
+      </a>
+      <a href="./doro.html">
+        <button
+          class="button-black"
+          type="button"
+          onclick=""
+          style="position: absolute; left: 50%; top: 6%"
+        >
+          TIMER
+        </button>
+      </a>
+      <a
+        href="https://github.com/urmirocks/Animedoro"
+        style="position: absolute; left: 10px; bottom: 10%"
+        target="_blank"
+      >
+        <button class="button-black" type="button" onclick="">
+          <p style="font-size: 15px">GITHUB REPO</p>
+        </button>
+      </a>
+      <a
+        href="https://www.instagram.com/oh.its.just.waves_/"
+        style="position: absolute; left: 10px; top: 90%"
+      >
+        <button class="button-black" type="button" onclick="">
+          <p style="font-size: 15px">INSTAGRAM ID</p>
+        </button>
+      </a>
+    </nav>
+    <button
+      class="openBtn"
+      style="position: fixed; top: 0; left: 0; font-size: 23px"
+      onclick="openNav()"
+    >
+      &gt;
+    </button>
+    <br />
+    <br />
+    <div class="main">
+      <main>
+        <h1>What is Animedoro?</h1>
+        <div class="content">
+          <h2>
+            IT's LIKE POMODORO BUT ANIME <br />
+            INSTEAD OF REGULAR 25+5 POMODORO TECHNIQUE, <br />
+            YOU WORK AT YOUR OWN PACE FOR 40 TO 60 MINUTES <br />
+            THEN WATCH AN EPISODE OF ANIME FOR 20 MINUTES <br />
+            AND CONTINUE THE CYCLE. <br />
+            YOU CAN ALSO CHANGE THE TIME LIMITS IF YOU WANT <br />
+            FOR MORE INFO WATCH THIS VIDEO BY
+            <a href="https://www.youtube.com/channel/UCo9QYIyEXUWB5-J_Q9waBYg"
+              >Josh Chen</a
+            >
+          </h2>
+          <iframe
+            src="https://www.youtube-nocookie.com/embed/bUjGZJIgse0"
+            style="height: 450px; width: 60%; border: none; overflow: hidden"
+            onload="javascript:'alert(0);'"
+          ></iframe>
+
+          <br />
+          <br />
+
+          <a href="./doro.html">
+            <button
+              id="start-animedoro"
+              class="button-black"
+              type="button"
+              onclick=""
+              style="font-weight: 400"
+            >
+              <h3>START ANIMEDORO</h3>
+            </button>
+          </a>
+          <br />
+        </div>
+      </main>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
